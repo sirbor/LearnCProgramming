@@ -1,0 +1,3 @@
+/Users/sirbor/Projects/LearnCProgramming/cmake-build-debug/CMakeFiles/LearnCProgramming.dir
+/Users/sirbor/Projects/LearnCProgramming/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sirbor/Projects/LearnCProgramming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
