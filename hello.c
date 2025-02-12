@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
   printf("Hello World\n");
-  printf("Learning C Progrmaming\n");
+  printf("Learn C programming!\n");
   return 0;
 }
