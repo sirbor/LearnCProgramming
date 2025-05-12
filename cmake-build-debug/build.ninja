@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_LearnCProgramming: phony || .
 
 build CMakeFiles/LearnCProgramming.dir/hello.c.o: C_COMPILER__LearnCProgramming_unscanned_Debug /Users/sirbor/Projects/LearnCProgramming/hello.c || cmake_object_order_depends_target_LearnCProgramming
   DEP_FILE = CMakeFiles/LearnCProgramming.dir/hello.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/LearnCProgramming.dir
   OBJECT_FILE_DIR = CMakeFiles/LearnCProgramming.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/LearnCProgramming.dir/hello.c.o: C_COMPILER__LearnCProgramming_
 # Link the executable LearnCProgramming
 
 build LearnCProgramming: C_EXECUTABLE_LINKER__LearnCProgramming_Debug CMakeFiles/LearnCProgramming.dir/hello.c.o
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk
   OBJECT_DIR = CMakeFiles/LearnCProgramming.dir
   POST_BUILD = :
   PRE_LINK = :
