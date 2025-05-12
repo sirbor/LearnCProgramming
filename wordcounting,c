@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#define OUT 0  // State when outside a word
+#define IN 1   // State when inside a word
+
+int main() {
+    int nl, nw, nc, c, state;
+    nl = nw = nc = 0;  // Initialize counters
+    state = OUT;  // Start outside a word
+
+    while ((c = getchar()) != EOF) {  // Read characters until EOF
+        ++nc;  // Count characters
+
+        if (c == '\n')  // Count newlines
+            ++nl;
+
+        if (c == ' ' || c == '\n' || c == '\t') {  // Detect word separators
+            state = OUT;
+        } else if (state == OUT) {  // Found a new word
+            state = IN;
+            ++nw;
+        }
+    }
+
+    printf("Lines: %d, Words: %d, Characters: %d\n", nl, nw, nc);
+    return 0;
+}
+
