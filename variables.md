@@ -99,7 +99,14 @@ printf("%.2f", height); // prints height with 2 decimal places
 printf("%.3lf", salary); // prints salary with 3 decimal places
 
 ```
+### Derived Data Tpes
 
+- Data types that are derived from the basic data types are called derived data types.
+- They are used to store multiple values of different data types. 
+- The derived data types are:
+1. Bool type
+2. Enumarated type 
+3. Complex type
 
 
 
