@@ -5,12 +5,12 @@
 ### Declaration of Variables:
 - Syntax - type variableName = value;
 
-** Example : **
+**Example :**
 
-`
+```
 int age = 25;
 
-`
+```
 
 ### Basic Data types in C;
 1. int - 2 or 4 bytes - stores whole numbers without decimals eg 1
@@ -25,40 +25,44 @@ int age = 25;
 
 ### Initializing varibales:
 
-`
+```
 
 int age = 25;
 flaot height = 5.8;
 duble salary 40000.96;
 char grade = 'A';
 
-`
-** using variables: **
+```
+**using variables:**
 
-`
+```
 
 age = 30; changes age to 30
 height = 6.0; changes height to 6.0
 grade = 'B'; changes grade to B 
 salary = 45000.00; changes saler to 45,000
 
-`
+```
 ### Constants:
 - Constants are fixed values that do not change during the execution of a program.
 - Constants are declared using the keyword const.
-** Example: **
- `
+
+**Example:**
+
+```
  const int MAX_AGE = 100;
  const float PI = 3.14;
  const char GRADE = 'A';
  
-`
+```
 - Constants are used to define fixed values that are used in the program.
 
 ### Escape Sequences:
 - Escape sequences are used to represent special characters in strings.
 - Escape sequences are preceded by a backslash (\).
-** Example: **
+
+**Example:**
+
 - \n - new line
 - \t - tab
 - \\ - backslash
@@ -73,7 +77,9 @@ salary = 45000.00; changes saler to 45,000
 ### Format Specifiers:
 - Format specifiers are used to format the output of variables.
 - Format specifiers are preceded by a percentage sign (%).
-** Example: **
+
+**Example:**
+
 - %d - integer
 - %f - float
 - %lf - double
@@ -85,12 +91,14 @@ salary = 45000.00; changes saler to 45,000
 
 ### Decimal Precision:
 - Decimal precision is used to control the number of decimal places displayed in float and double values.
-** Example: ** 
-`
+
+**Example:** 
+
+```
 printf("%.2f", height); // prints height with 2 decimal places
 printf("%.3lf", salary); // prints salary with 3 decimal places
 
-`
+```
 
 
 
