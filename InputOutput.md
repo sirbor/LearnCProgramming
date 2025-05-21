@@ -30,6 +30,7 @@ int main() {
 }
 ```
 ### Explanation:
+
 - The `#include <stdio.h>` directive includes the standard input and output library.
 - The `main()` function is the entry point of the program.
 - The `printf()` function is used to print messages to the console.
@@ -47,5 +48,63 @@ int main() {
 2. tabs
 3. Newlines
 - It waits for actual character input instead of consuming leftover whitespace.
+
+### Multiple Input:
+- You can read multiple inputs in a single `scanf()` statement by separating the format specifiers with spaces.
+
+```c
+#include <stdio.h>
+int main() {
+    int num1, num2;
+    char str[100];
+
+    // Input
+    printf("Enter two integers and a string: ");
+    scanf("%d %d %s", &num1, &num2, str);
+
+    // Output
+    printf("You entered: %d, %d, %s\n", num1, num2, str);
+
+    return 0;
+}
+
+```
+### Explanation:
+- The `scanf()` function reads two integers and a string in a single line.
+- The format specifiers `%d %d %s` are used to read two integers and a string, respectively.
+- The values are stored in the variables `num1`, `num2`, and `str`.
+### Output Formatting:
+- The `printf()` function can be used to format the output using format specifiers.
+- The format specifiers include:
+  - `%d`: Integer
+  - `%f`: Float
+  - `%c`: Character
+  - `%s`: String
+  - `%lf`: Double
+  - `%x`: Hexadecimal integer
+  - `%o`: Octal integer
+  - `%p`: Pointer address
+- You can also specify the width and precision of the output using the format specifiers.
+```c
+#include <stdio.h>
+int main() {
+    float num = 123.456789;
+
+    // Output with different format specifiers
+    printf("Integer: %d\n", (int)num);
+    printf("Float: %.2f\n", num);
+    printf("Hexadecimal: %x\n", (int)num);
+    printf("Octal: %o\n", (int)num);
+    printf("Pointer address: %p\n", &num);
+
+    return 0;
+}
+```
+### Explanation:
+- The `printf()` function is used to format the output.
+- The `%.2f` format specifier is used to print the float value with two decimal places.
+- The `%x` format specifier is used to print the hexadecimal representation of the integer value.
+- The `%o` format specifier is used to print the octal representation of the integer value.
+- The `%p` format specifier is used to print the address of the variable in hexadecimal format.
 
 
