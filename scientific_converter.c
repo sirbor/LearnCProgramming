@@ -1,66 +1,61 @@
 #include <stdio.h>
 #include <stdbool.h>
-/*This is a project to display
-* skills learnt on the dataypes and variables 
-* in C Programming Language
-*
+/*
+* Scientific Measurement Converter
+* Data types and Variables
+* KG to LB and Cm to INCHES and Vice Versa
 */
 int main(void)
 {
-   // Demonstrate different data types
-    char choice;               // Single character input
-    unsigned short menu_option; // Positive menu selection
-    float input_value;         // Measurement to convert (real number)
-    double precise_result;     // High-precision result
-    bool valid_input = false;  // Boolean flag
+char choice;
+unsigned short menu_option;
+float input_value;
+bool valid_input = false;
+double precise_result;
 
-    // Conversion factors (demonstrates constants)
-    const float CM_TO_INCH = 0.393701;
-    const double KG_TO_LB = 2.20462;
+const float KG_TO_LB = 2.20462;
+const float CM_TO_INCHES = 0.393701;
 
-    printf("=== Scientific Measurement Converter ===\n");
-    
-    while (!valid_input) {
-        printf("\nChoose conversion:\n");
-        printf("1. Centimeters to Inches\n");
-        printf("2. Inches to Centimeters\n");
-        printf("3. Kilograms to Pounds\n");
-        printf("4. Pounds to Kilograms\n");
-        printf("Enter choice (1-4): ");
-        
-        scanf("%hu", &menu_option); // %hu for unsigned short
+printf("===Scientific Measurement Converter===\n");
+while (!valid_input) {
+    printf("\nChoose a conversion\n");
+    printf("1. Convert from CM to INCHES\n");
+    printf("2. Convert from INCHES to CM\n");
+    printf("3. Convert from KG to LB\n");
+    printf("4. COnvert from LB to KG\n");
+    printf("Please choose a conversion option(1-4): \n");
 
-        if (menu_option >= 1 && menu_option <= 4) {
-            valid_input = true;
-            
-            printf("Enter value to convert: ");
-            scanf("%f", &input_value);
+    scanf("%hu", &menu_option);
 
-            switch (menu_option) {
-                case 1:
-                    precise_result = input_value * CM_TO_INCH;
-                    printf("%.2f cm = %.4f inches\n", input_value, precise_result);
-                    break;
-                case 2:
-                    precise_result = input_value / CM_TO_INCH;
-                    printf("%.2f inches = %.4f cm\n", input_value, precise_result);
-                    break;
-                case 3:
-                    precise_result = input_value * KG_TO_LB;
-                    printf("%.2f kg = %.4f lbs\n", input_value, precise_result);
-                    break;
-                case 4:
-                    precise_result = input_value / KG_TO_LB;
-                    printf("%.2f lbs = %.4f kg\n", input_value, precise_result);
-                    break;
-            }
-        } else {
-            printf("Invalid input! Please enter 1-4.\n");
-            // Clear input buffer
-            while (getchar() != '\n');
-        }
+    if(menu_option >= 1 && menu_option <= 4){
+      valid_input = true;
+
+    printf("Please input a value to convert: \n");
+    scanf("%f", &input_value);
+
+      switch(menu_option){
+        case 1:
+        precise_result = input_value * CM_TO_INCHES;
+        printf("%f CM is %f Inches\n", input_value, precise_result);
+        break;
+        case 2:
+        precise_result = input_value / CM_TO_INCHES;
+        printf("%f Inches is %f Centimeters\n", input_value, precise_result);
+        break;
+        case 3:
+        precise_result = input_value * KG_TO_LB;
+        printf("%f KG is %f LB\n", input_value, precise_result);
+        break;
+        case 4:
+        precise_result = input_value / KG_TO_LB;
+        printf("%f LB is %f KG\n", input_value, precise_result);
+        break;
+      }
+           }
+     else {
+        printf("Invalid Input! Please enter the option(1-4)\n");
+        while(getchar() != '\n');
     }
-
-    return 0;
+    return (0);
+  }
 }
-
